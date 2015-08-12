@@ -13,6 +13,7 @@
 
 
 def is_prime?(number)
+ if number > 1
   if number == 2 || number == 3
     true
   elsif ( (number % 1) || (number % 2) || (number % 3) == 0 )
@@ -20,6 +21,8 @@ def is_prime?(number)
   else
     true
   end
+end
+false
 end
 
 # These are tests to check that your code is working. After writing
