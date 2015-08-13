@@ -14,7 +14,7 @@
 def is_prime?(number)
  if number > 0
 
-  if (number == 2) || (number == 3)
+  if (number == 2) || (number == 3) || (number == 5)
     true
   elsif (  (number % 2)  == 0  || (number % 3)  == 0 || (number % 5)  == 0 )
    false
