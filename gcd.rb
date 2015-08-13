@@ -6,7 +6,6 @@
 
 
 def greatest_common_factor(number1, number2)
-  result = []
   i = 0
   factors_num_one = (1..number1).find_all { |i|  number1 % i == 0 }
   factors_num_two = (1..number2).find_all { |i|  number2 % i == 0 }
