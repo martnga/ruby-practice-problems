@@ -11,18 +11,21 @@
 # challenge.
 #
 
-
 def is_prime?(number)
- if number > 1
-  if number == 2 || number == 3
+ if number > 0
+
+  if (number == 2) || (number == 3)
     true
-  elsif ( (number % 1) || (number % 2) || (number % 3) == 0 )
-    false
+  elsif (  (number % 2)  == 0  || (number % 3)  == 0 || (number % 5)  == 0 )
+   false
   else
     true
   end
-end
+
+else
 false
+end
+
 end
 
 # These are tests to check that your code is working. After writing
