@@ -6,16 +6,10 @@
 
 
 def greatest_common_factor(number1, number2)
-  i = 0
   factors_num_one = (1..number1).find_all { |i|  number1 % i == 0 }
   factors_num_two = (1..number2).find_all { |i|  number2 % i == 0 }
-  while i < factors_num_two.length
-    if (factors_num_one.include? factors_num_two[i])
-      gcd = factors_num_two[i]
-    end
-    i += 1
-  end
- gcd
+  gcd = factors_num_two & factors_num_one
+  gcd.max
 end
 
 # These are tests to check that your code is working. After writing
